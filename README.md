@@ -1,5 +1,5 @@
-# ApiRestVendasTurismo
-#### ApiRestVendasTurismo + REST API PYTHON + Flask Framework
+# Turis
+#### Api Rest + REST API PYTHON + Flask Framework
 
 Simulador em Python para consulta e venda de pacotes de turismo.
 
