@@ -8,6 +8,7 @@ import Hoteis as H
 # from math import ceil, floor
 IMPOSTO = 0.15
 
+
 def calcula_custohospedagem(valor=0):
     """
     Retorna calculo de viagem.
@@ -16,7 +17,8 @@ def calcula_custohospedagem(valor=0):
         valor_as_float = float(float(valor) * IMPOSTO)
 
         if valor_as_float >= 25.0:
-            raise ValueError('O cálculo total sob imposto é superior ao permitido', valor_as_float)
+            raise ValueError(
+                'O cálculo total sob imposto é superior ao permitido', valor_as_float)
 
     except ValueError as error:
         print("Erro:=", error.args)
@@ -34,5 +36,6 @@ def main():
     resultado_as_float = float(calcula_custohospedagem(180))
 
     print('Cálculo total:= {0}'.format(resultado_as_float))
+
 
 main()
