@@ -1,13 +1,15 @@
-# -*- coding: iso-8859-1 -*-
 """
 Módulo para obter custo de hospedagem
 """
-import Hoteis as H
-
 # import math
 # from math import ceil, floor
-IMPOSTO = 0.15
+import subprocess
+import Hoteis as H
 
+# alterando o codepage console para chcp 65001
+subprocess.call("chcp 65001", shell=True)
+
+IMPOSTO = 0.15
 
 def calcula_custohospedagem(valor=0):
     """
